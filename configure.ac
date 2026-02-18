@@ -56,6 +56,7 @@ PKG_CHECK_MODULES(LIGHTDM, [
     gio-unix-2.0
     xdmcp
     xcb
+	util-linux
 ])
 
 PKG_CHECK_MODULES(GLIB, [
