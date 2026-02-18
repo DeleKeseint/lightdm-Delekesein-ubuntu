@@ -11,9 +11,10 @@ automake --add-missing --copy --foreign
 
 YELP=`which yelp-build`
 if test -z $YELP; then
-  echo "*** The tools to build the documentation are not found,"
-  echo "    please install the yelp-tools package ***"
-  exit 1
+  echo "not found yelp, install…"
+  sudo apt update
+  sudo apt install yelp-tools
+  t 
 fi
 
 if [ -z "$NOCONFIGURE" ]; then
